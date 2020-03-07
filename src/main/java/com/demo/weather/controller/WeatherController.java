@@ -27,7 +27,7 @@ public class WeatherController {
 	public ModelAndView index () {
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("weather/index");
-		modelAndView.addObject("citys", weatherService.getCities());
+		modelAndView.addObject("cities", weatherService.getCities());
 		return modelAndView;
 	}
 }
