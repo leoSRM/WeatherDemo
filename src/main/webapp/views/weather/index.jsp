@@ -58,6 +58,10 @@
             }
         });
 	}
-	$(document).ready(initData());
+	$(document).ready(function () {
+		initData();
+		//update data every 15mins
+		setInterval('initData()', 15*60*1000);
+	});
 	</script>
 </html>
